@@ -1,4 +1,4 @@
-<!-- Default Page Layout -->
+<!-- Front Page Layout -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/modules/navbar.css">
-    <link rel="stylesheet" href="/assets/css/modules/footer.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
     {% include navigation.html %}
+    <h1>Latest Posts</h1>
     {{ content }}
-    {% include footer.html %}
-</body> 
+</body>
 </html>

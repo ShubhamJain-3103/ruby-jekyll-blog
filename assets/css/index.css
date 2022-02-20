@@ -1,0 +1,58 @@
+@import url("https://unpkg.com/open-props");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+}
+
+header {
+  background: var(--blue-5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.navbar ul li {
+  margin: 15px;
+}
+
+.navbar ul a {
+  color: var(--gray-0);
+  font-size: var(--font-size-2);
+  text-decoration: none;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+.setleft {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.setRight {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=index.css.map */
