@@ -1,0 +1,59 @@
+<!-- Blog Post Layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+    {% include navigation.html %}
+<main>
+    <content>
+        <div class="block-image-container">
+            <img src="{{ page.hero_image }}" alt="Hero Image" id="hero-image" />
+        </div>
+        
+        <h1 id="blog-title">{{ page.title }}</h1>
+        
+        
+        <div class="dt-container">
+            <img id="author-image" alt="author image" src="{{ page.author_image }}" />
+            <div class="details">
+                <p>{{ page.author }}</p>
+                <p><span>{{ page.date | date_to_string }}</span></p>
+            </div>
+        </div>
+        
+        
+        <div class="blog-text">
+            
+            {{ content }}
+
+            <img src="{{ page.block_image }}" alt="block image" id="block-image" />
+            
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <p>{{page.content_block_2}}</p>
+            
+            <div class="qoute">
+                <p>
+                    "{{page.qoute}}"
+                    <span>-by {{ page.quote_author }}</span>
+                </p>
+            </div>
+            
+        </div>
+
+    </content>
+</main>
+    {% include footer.html %}
+</body>
+</html>
